@@ -1,0 +1,27 @@
+.root {
+  background-color: var(--secondary);
+
+  .headerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+    button {
+      margin-left: 10px;
+      // border-radius: 30px;
+    }
+  }
+
+  h1 {
+    color: var(--textPrimary);
+    font-size: 40px;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 400;
+    margin: 0;
+    span {
+      font-family: 'Tilt Warp', cursive;
+      color: var(--primary);
+    }
+  }
+}

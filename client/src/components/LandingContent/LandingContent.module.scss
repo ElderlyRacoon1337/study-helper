@@ -1,0 +1,72 @@
+.root {
+  .contentFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .contentLeft {
+      height: calc(100vh - 60px);
+      flex: 0 0 50%;
+
+      ul {
+        margin: 150px auto;
+        font-size: 46px;
+
+        p {
+          margin-bottom: 30px;
+          font-family: 'Tilt Warp', cursive;
+          position: relative;
+
+          svg {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 12px;
+            left: -50px;
+            color: var(--primary);
+          }
+        }
+      }
+    }
+
+    .contentRight {
+      flex: 0 0 40%;
+      height: calc(100vh - 60px);
+
+      .formTitle {
+        font-family: 'Tilt Warp', cursive;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 42px;
+      }
+
+      .form {
+        margin: 120px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: var(--secondary);
+        box-shadow: var(--baseBoxShadow);
+
+        input {
+          margin-bottom: 20px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+
+        .name {
+          display: flex;
+          justify-content: space-between;
+          input {
+            width: 180px;
+          }
+        }
+
+        button {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}

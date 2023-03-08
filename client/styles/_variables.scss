@@ -1,21 +1,21 @@
 :root {
-  --primary: #8884ff;
-  --primaryDark: #7370d4;
-  --primaryTooDark: #5e5bb0;
+  --primary: #ff5099;
+  --primaryDark: #d94482;
+  --primaryTooDark: #b9376d;
 
-  --secondary: #f6f6ff;
-  --background: #ffffff;
+  --secondary: #ffffff;
+  --background: #f8f8f8;
   --textPrimary: #213547;
   --textSecondary: #4d4d4d;
   --textOpposite: #ffffff;
-  --baseBoxShadow: 0px 0px 10px 0px rgba(50, 27, 76, 0.2);
+  --baseBoxShadow: 0px 0px 20px 0px #ff5099;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #8884ff;
-    --primaryDark: #7370d4;
-    --primaryTooDark: #5e5bb0;
+    --primary: #ff5099;
+    --primaryDark: #d94482;
+    --primaryTooDark: #b9376d;
 
     --secondary: #282828;
     --background: #1f1f1f;
