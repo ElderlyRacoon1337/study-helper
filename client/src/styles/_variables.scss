@@ -1,0 +1,26 @@
+:root {
+  --primary: #8884ff;
+  --primaryDark: #7370d4;
+  --primaryTooDark: #5e5bb0;
+
+  --secondary: #f6f6ff;
+  --background: #ffffff;
+  --textPrimary: #213547;
+  --textSecondary: #4d4d4d;
+  --textOpposite: #ffffff;
+  --baseBoxShadow: 0px 0px 10px 0px rgba(50, 27, 76, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #8884ff;
+    --primaryDark: #7370d4;
+    --primaryTooDark: #5e5bb0;
+
+    --secondary: #282828;
+    --background: #1f1f1f;
+    --textPrimary: #ffffff;
+    --textSecondary: #bcbcbc;
+    --textOpposite: #000000;
+  }
+}

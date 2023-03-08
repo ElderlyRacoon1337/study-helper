@@ -1,0 +1,56 @@
+.button {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 9px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: var(--primaryDark);
+}
+
+.button:active {
+  background-color: var(--primaryTooDark);
+  transform: translateY(1px);
+}
+
+.buttonOutlined {
+  @extend .button;
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.buttonOutlined:hover {
+  background-color: var(--background);
+}
+
+.buttonOutlined:active {
+  background-color: var(--background);
+  transform: translateY(1px);
+}
+
+.iconButton {
+  @extend .button;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-radius: 50%;
+  svg {
+    width: 22px;
+  }
+}
+
+.iconButtonOutlined {
+  @extend .buttonOutlined;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-radius: 50%;
+  svg {
+    min-width: 22px;
+  }
+}
