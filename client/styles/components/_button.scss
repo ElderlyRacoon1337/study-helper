@@ -14,7 +14,7 @@
 
 .button:active {
   background-color: var(--primaryTooDark);
-  transform: translateY(1px);
+  // transform: translateY(1px);
 }
 
 .buttonOutlined {
@@ -25,12 +25,11 @@
 }
 
 .buttonOutlined:hover {
-  background-color: var(--background);
+  background-color: var(--primaryLight);
 }
 
 .buttonOutlined:active {
   background-color: var(--background);
-  transform: translateY(1px);
 }
 
 .iconButton {
@@ -52,5 +51,25 @@
   border-radius: 50%;
   svg {
     min-width: 22px;
+  }
+}
+
+.buttonText {
+  @extend .button;
+  background-color: transparent;
+  color: var(--primary);
+  border: none;
+}
+
+.buttonText:hover {
+  @extend .button;
+  background-color: var(--primaryLight);
+  color: var(--primary);
+  border-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  .buttonOutlined {
+    color: var(--textPrimary);
   }
 }

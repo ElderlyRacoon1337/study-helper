@@ -1,16 +1,17 @@
 import styles from './Header.module.scss';
 
-const LandingHeader = () => {
+const Header = () => {
   return (
     <div className={styles.root}>
       <div className="container">
         <div className={styles.headerFlex}>
           <a href="/">
             <h1>
-              <span>B</span>ankai
+              <span>S</span>tudy <span>H</span>elper
             </h1>
           </a>
           <div className="rightSide">
+            <button className="buttonText">Hello world</button>
             <button className="buttonOutlined">About us</button>
             <button className="buttonOutlined">Features</button>
             <button className="button">Join us</button>
@@ -21,4 +22,4 @@ const LandingHeader = () => {
   );
 };
 
-export default LandingHeader;
+export default Header;
