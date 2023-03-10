@@ -1,25 +1,40 @@
 .root {
-  background-color: var(--secondary);
+  background-color: var(--themeColor);
 
   .headerFlex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 60px;
 
-    button {
-      margin-left: 10px;
-      // border-radius: 30px;
+    .rightSide {
+      position: relative;
+      display: flex;
+      align-items: center;
+      button {
+        margin-left: 10px;
+      }
     }
   }
 
   h1 {
     color: var(--textPrimary);
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 500;
     margin: 0;
     span {
-      color: var(--primary);
+      // color: var(--primary);
     }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 34px;
+    margin-right: 7px;
+    stroke: var(--primary);
   }
 }

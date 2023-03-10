@@ -1,34 +1,77 @@
+.formHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  svg {
+    width: 26px;
+    cursor: pointer;
+    stroke: var(--textSecondary);
+
+    &:hover {
+      stroke: var(--primary);
+    }
+  }
+}
 .formTitle {
-  font-family: 'Tilt Warp', cursive;
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 42px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .form {
-  margin: 120px auto;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 30px;
   border-radius: 20px;
-  background-color: var(--secondary);
-  box-shadow: var(--baseBoxShadow);
+  background-color: var(--themeColor);
+  // box-shadow: var(--baseBoxShadow);
+  width: 420px;
 
   input {
     margin-bottom: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    // padding-top: 15px;
+    // padding-bottom: 15px;
   }
 
   .name {
     display: flex;
     justify-content: space-between;
     input {
-      width: 180px;
+      width: 170px;
     }
   }
 
   button {
-    padding: 15px;
+    padding: 11px;
+  }
+}
+
+.allready {
+  color: var(--primary);
+  text-align: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.formBottom {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .icons {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 35px;
+      margin-right: 10px;
+      fill: var(--textPrimary);
+
+      &:hover {
+        fill: var(--primary);
+      }
+    }
   }
 }

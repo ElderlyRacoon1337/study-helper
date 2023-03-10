@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Auth.module.scss';
+import Signin from './Signin';
+import Signup from './Signup';
 
-const Auth = () => {
+interface AuthProps {
+  setIsAuthDialogOpen: (arg0: boolean) => void;
+  isSignUp: boolean;
+  setIsSignUp: (arg0: boolean) => void;
+}
+
+const Auth: React.FC<AuthProps> = ({
+  setIsAuthDialogOpen,
+  isSignUp,
+  setIsSignUp,
+}) => {
   return (
     <div className={styles.form}>
-      <h2 className={styles.formTitle}>Join us</h2>
-      <div className={styles.name}>
-        <input type="text" placeholder="Name" className="input" />
-        <input type="text" placeholder="Surname" className="input" />
-      </div>
-      <input type="text" placeholder="Email" className="input" />
-      <input type="password" placeholder="Password" className="input" />
-      <button className="button">Continue</button>
+      {isSignUp ? (
+        <Signup
+          setIsSignUp={setIsSignUp}
+          setIsAuthDialogOpen={setIsAuthDialogOpen}
+        />
+      ) : (
+        <Signin
+          setIsSignUp={setIsSignUp}
+          setIsAuthDialogOpen={setIsAuthDialogOpen}
+        />
+      )}
     </div>
   );
 };

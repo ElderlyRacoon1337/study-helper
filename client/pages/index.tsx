@@ -1,9 +1,13 @@
 import Header from '@/components/Header';
+import Main from '@/components/Main';
+import MainLayout from '@/layouts/MainLayout';
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <MainLayout>
+        <Main />
+      </MainLayout>
     </>
   );
 }

@@ -1,0 +1,148 @@
+.root {
+  // background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  height: calc(100vh - 90px);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  .engine {
+    background-color: var(--themeColor);
+    padding: 30px;
+    flex: 0 0 31%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
+  .timer {
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin-right: 10px;
+    }
+  }
+}
+
+.center {
+  flex: 0 0 31%;
+  background-color: var(--themeColor);
+  padding: 30px;
+  border-radius: 20px;
+
+  p {
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+}
+
+.modes {
+  display: flex;
+  flex-direction: column;
+
+  .mode {
+    // margin-bottom: 5px;
+  }
+  .mode:last-child {
+    margin-bottom: 0;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    &:hover {
+      padding: 10px;
+    }
+  }
+}
+
+.stats {
+  background-color: var(--themeColor);
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.right {
+  flex: 0 0 31%;
+  background-color: var(--themeColor);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p {
+    font-weight: 600;
+  }
+
+  .rigthActions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    input {
+      margin-bottom: 15px;
+      // max-width: 60px;
+      // padding-left: 17px !important;
+    }
+  }
+  button {
+    padding: 10px;
+  }
+}
+
+.stats {
+  padding-bottom: 40px;
+  .title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    svg {
+      width: 24px;
+      margin-right: 10px;
+    }
+  }
+  .statsList {
+    display: flex;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .statItem {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-right: 50px;
+  }
+  span {
+    font-size: 1.5rem;
+    margin-left: 5px;
+    color: var(--primary);
+  }
+}

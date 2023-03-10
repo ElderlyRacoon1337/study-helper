@@ -1,0 +1,12 @@
+techniques:
+  - custom timer
+  - pomodorro (25:5)
+  - pomodorro advanced (50:10)
+  - animedoro (25:35)
+  - 90:30
+
+pages:
+  - profile
+  - settings
+  - achievements
+  - goals

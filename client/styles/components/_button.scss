@@ -6,6 +6,7 @@
   padding: 9px 10px;
   border-radius: 10px;
   display: inline-block;
+  font-size: 0.8125rem;
 }
 
 .button:hover {
@@ -25,12 +26,13 @@
 }
 
 .buttonOutlined:hover {
-  background-color: var(--primaryLight);
+  background-color: var(--primary);
+  color: white;
 }
 
-.buttonOutlined:active {
-  background-color: var(--background);
-}
+// .buttonOutlined:active {
+//   background-color: var(--background);
+// }
 
 .iconButton {
   @extend .button;
@@ -61,6 +63,15 @@
   border: none;
 }
 
+.iconButtonText {
+  @extend .iconButtonOutlined;
+  border: none;
+}
+
+.iconButtonText:hover {
+  background-color: var(--primaryLight);
+}
+
 .buttonText:hover {
   @extend .button;
   background-color: var(--primaryLight);
@@ -71,5 +82,22 @@
 @media (prefers-color-scheme: dark) {
   .buttonOutlined {
     color: var(--textPrimary);
+    border-color: var(--textPrimary);
+    &:hover {
+      background-color: var(--textPrimary);
+      color: var(--textOpposite);
+    }
   }
+
+  .buttonText {
+    color: var(--textPrimary);
+    &:hover {
+      color: var(--textPrimary);
+    }
+  }
+}
+
+.iconButtonText:hover {
+  background-color: var(--primaryLight);
+  color: var(--textPrimary);
 }
