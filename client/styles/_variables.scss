@@ -4,9 +4,10 @@
   --primaryTooDark: #693bc0;
   --primaryLight: #f7f3ff;
 
-  --secondary: #ffffff;
   --themeColor: #ffffff;
-  --background: #f8f8f8;
+  // --background: #8d50ff;
+  --background: rgb(111, 67, 194);
+  --background: rgb(247, 247, 247);
   --textPrimary: #213547;
   --textSecondary: #4d4d4d;
   --textOpposite: #ffffff;
@@ -15,17 +16,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #8d50ff;
-    --primaryDark: #7340d2;
-    --primaryTooDark: #693bc0;
-    --primaryLight: #0c0513;
+    // --primaryDark: #7340d2;
+    // --primaryTooDark: #693bc0;
+    // --primaryLight: #0c0513;
+    --primary: #9f6bff;
+    --primaryTooDark: #8c5fe0;
+    --primaryLight: #7d55c8;
 
-    // --secondary: #272727;
-    // --secondary: #1c1c1c;
     --secondary: #0a080f;
     --themeColor: #151020;
-    // --background: #1b1b1b;
-    // --background: #101010;
     --background: #000000;
     --textPrimary: #ffffff;
     --textSecondary: #bcbcbc;

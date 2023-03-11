@@ -61,7 +61,7 @@ const Center: React.FC<CenterProps> = ({
                 : 'buttonText'
             )}
           >
-            Pomodorro advanced
+            Pomodorro 50/10
           </button>
           <button
             onClick={() => {

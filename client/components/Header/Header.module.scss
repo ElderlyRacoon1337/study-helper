@@ -1,5 +1,7 @@
 .root {
   background-color: var(--themeColor);
+  position: sticky;
+  top: 0;
 
   .headerFlex {
     display: flex;

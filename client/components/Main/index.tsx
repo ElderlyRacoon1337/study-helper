@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import React, { ChangeEvent, useEffect, useRef, useState } from 'react';
+import AboutModels from './AboutModes';
 import Center from './Center';
 import Engine from './Engine';
 import styles from './Main.module.scss';
@@ -7,11 +8,11 @@ import Right from './Right';
 import Stats from './Stats';
 
 export enum TimerModes {
-  POMODORRO = 'pomodorro',
-  POMODORRO_ADVANCED = 'pomodorro advanced',
-  ANIMEDORO = 'animedoro',
+  POMODORRO = 'Pomodorro',
+  POMODORRO_ADVANCED = 'Pomodorro 50/10',
+  ANIMEDORO = 'Animedoro',
   NINETY = '90/30',
-  CUSTOM = 'custom',
+  CUSTOM = 'Custom',
 }
 
 const Main = () => {
@@ -199,6 +200,7 @@ const Main = () => {
           )}
         </div>
         <Stats />
+        <AboutModels />
       </div>
     </div>
   );
