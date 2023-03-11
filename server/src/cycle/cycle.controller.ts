@@ -1,15 +1,24 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Request,
+  UseGuards,
+  Param,
+} from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
 import { CycleService } from './cycle.service';
 import { CreateCycleDto } from './dto/create-cycle.dto';
-import { UpdateCycleDto } from './dto/update-cycle.dto';
 
-@Controller('cycle')
+@Controller('cycles')
 export class CycleController {
   constructor(private readonly cycleService: CycleService) {}
 
+  @UseGuards(AuthGuard('jwt'))
   @Post()
-  create(@Body() createCycleDto: CreateCycleDto) {
-    return this.cycleService.create(createCycleDto);
+  create(@Request() req, @Body() dto: CreateCycleDto) {
+    return this.cycleService.create(req.user.id, dto);
   }
 
   @Get()
@@ -17,18 +26,8 @@ export class CycleController {
     return this.cycleService.findAll();
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.cycleService.findOne(+id);
-  }
-
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCycleDto: UpdateCycleDto) {
-    return this.cycleService.update(+id, updateCycleDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.cycleService.remove(+id);
+  @Get('byuser/:id')
+  findAllByUser(@Param() params: any) {
+    return this.cycleService.findAllByUser(params.id);
   }
 }
