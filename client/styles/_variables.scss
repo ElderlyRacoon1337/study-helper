@@ -10,7 +10,7 @@
   --textPrimary: #213547;
   --textSecondary: #4d4d4d;
   --textOpposite: #ffffff;
-  --baseBoxShadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+  --baseBoxShadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,5 +30,6 @@
     --textPrimary: #ffffff;
     --textSecondary: #bcbcbc;
     --textOpposite: #000000;
+    --baseBoxShadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
   }
 }

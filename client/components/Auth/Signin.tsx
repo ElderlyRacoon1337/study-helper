@@ -55,7 +55,7 @@ const Signin: React.FC<SigninProps> = ({
           </svg>
         </div>
         <p onClick={() => setIsSignUp(true)} className={styles.allready}>
-          Don't have an account?
+          Don&apos;t have an account?
         </p>
       </div>
     </>

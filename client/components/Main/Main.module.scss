@@ -1,6 +1,6 @@
 .root {
   // background-color: var(--secondary);
-  padding: 20px;
+  padding-top: 10px;
   border-radius: 10px;
   margin-top: 15px;
   height: calc(100vh - 90px);
@@ -23,16 +23,37 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        color: var(--primary);
+      }
+
+      .timer {
+        font-size: 60px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .restTimer {
+        font-size: 40px;
+      }
+    }
   }
 
   .title {
     font-weight: 600;
-  }
 
-  .timer {
-    font-size: 60px;
-    margin: 0;
-    margin-bottom: 10px;
+    span {
+      color: var(--primary);
+    }
   }
 
   .actions {
@@ -99,13 +120,42 @@
 
   .rigthActions {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
+
+    .inputLabels {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        padding: 10px;
+        text-align: center;
+        color: var(--primary);
+        font-size: 1.1rem;
+        width: 85px;
+      }
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+
+      .inputGroup {
+        input {
+          margin-right: 5px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
 
     input {
-      margin-bottom: 15px;
-      // max-width: 60px;
-      // padding-left: 17px !important;
+      padding: 10px;
+      width: 40px;
+      border-radius: 10px;
+      padding-left: 12px;
+      font-size: 1.1rem;
     }
   }
   button {
@@ -144,5 +194,66 @@
     font-size: 1.5rem;
     margin-left: 5px;
     color: var(--primary);
+    font-weight: 500;
+  }
+}
+
+.play {
+  margin-top: 20px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 24px;
+    margin-right: 5px;
+  }
+}
+
+.popupElement {
+  background-color: var(--secondary) !important;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px !important;
+  min-width: 0px !important;
+  width: 370px;
+
+  .confirmHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    svg {
+      width: 26px;
+      cursor: pointer;
+      stroke: var(--textSecondary);
+
+      &:hover {
+        stroke: var(--primary);
+      }
+    }
+  }
+  .confirmTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: orange;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .popupActions {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      font-size: 1rem;
+    }
   }
 }

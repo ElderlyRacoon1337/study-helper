@@ -8,7 +8,14 @@
   border-radius: 10px;
   top: 50px;
   right: 3%;
-  box-shadow: var(--baseBoxShadow);
+  // box-shadow: var(--baseBoxShadow);
+  border: 2px solid var(--primary);
+}
+
+a:last-child {
+  .navigation__item {
+    margin-bottom: 0;
+  }
 }
 
 .navigation__item {
@@ -22,7 +29,7 @@
   padding-left: 15px;
 
   &:hover {
-    background-color: var(--primary);
+    background-color: var(--primaryTooDark);
     color: white;
   }
 
@@ -33,6 +40,6 @@
 }
 
 .active {
-  background-color: var(--primaryTooDark);
+  background-color: var(--primary);
   color: white;
 }

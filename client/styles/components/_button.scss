@@ -30,10 +30,6 @@
   color: white;
 }
 
-// .buttonOutlined:active {
-//   background-color: var(--background);
-// }
-
 .iconButton {
   @extend .button;
   display: flex;
@@ -60,7 +56,7 @@
   @extend .button;
   background-color: transparent;
   color: var(--primary);
-  border: none;
+  border: 1px solid transparent;
 }
 
 .iconButtonText {
@@ -70,13 +66,14 @@
 
 .iconButtonText:hover {
   background-color: var(--primaryLight);
+  color: var(--primary);
 }
 
 .buttonText:hover {
   @extend .button;
   background-color: var(--primaryLight);
   color: var(--primary);
-  border-color: transparent;
+  border: 1px solid transparent;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -95,9 +92,9 @@
       color: var(--textPrimary);
     }
   }
-}
 
-.iconButtonText:hover {
-  background-color: var(--primaryLight);
-  color: var(--textPrimary);
+  .iconButtonText:hover {
+    background-color: var(--primaryLight);
+    color: white;
+  }
 }
